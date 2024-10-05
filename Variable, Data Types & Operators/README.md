@@ -82,7 +82,7 @@ To take input from the user, you can use:
 
 ```cpp
 cin >> varName;
-
+```cpp
 ---
 
 # C++ Operators
