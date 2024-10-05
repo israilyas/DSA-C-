@@ -80,9 +80,9 @@ Type casting is converting data from one type to another.
 
 To take input from the user, you can use:
 
-```cpp
-cin >> varName;
-```cpp
+
+`cin >> varName;`
+
 ---
 
 # C++ Operators
