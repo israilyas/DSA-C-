@@ -103,3 +103,45 @@ In summary, variables with local scope are confined to the block in which they a
 A **global scope** refers to variables that are declared outside of all functions or blocks. These variables can be accessed from anywhere in the code, whether it's inside functions, blocks, or even different files (depending on the programming language).
 
 In simpler terms, a global variable is available throughout the entire program, regardless of where it’s declared.
+
+---
+
+## Datatype Modifiers
+
+**Datatype modifiers** are used to change the meaning or behavior of basic data types in C++. They can alter the range or the way the data is stored. Common datatype modifiers include `signed`, `unsigned`, `short`, and `long`. These modifiers are typically applied to integer and character types.
+
+### Key Modifiers:
+
+1. **Signed**:
+   - By default, integer types are signed, meaning they can store both positive and negative values.
+   - A signed integer reserves one bit (most significant bit, or MSB) to indicate the sign (positive or negative) of the number.
+  
+2. **Unsigned**:
+   - An unsigned modifier removes the ability to store negative values, allowing only positive numbers and zero.
+   - This effectively increases the range of positive numbers that can be stored because all the bits are used for the magnitude of the number (no sign bit).
+
+   **Example**: An unsigned integer allows you to store larger positive values compared to a signed integer of the same size.
+
+3. **Short**:
+   - A short modifier reduces the storage size of an integer, typically using fewer bytes.
+   - Useful when memory is limited and you only need to store small numbers.
+
+4. **Long**:
+   - A long modifier increases the storage size of an integer, allowing it to store larger values.
+   - `long` and `long long` extend the range of integer data types by allocating more memory.
+
+### Integer Data Types:
+- **Signed Integer**: Can store both positive and negative numbers.
+- **Unsigned Integer**: Stores only non-negative numbers (zero and positive values).
+
+### Impact on Data Storage:
+- The **number of bits** remains the same for both signed and unsigned types, but the **range** of values changes.
+  - In signed integers, one bit is reserved to represent the sign (positive or negative).
+  - In unsigned integers, all bits are used to represent positive values, which effectively doubles the range of positive numbers.
+
+### Size of Datatypes:
+- The size of an integer (or any modified integer type) depends on the specific modifier and can vary across systems (e.g., `short int`, `long int`, `long long int`).
+
+### Important Notes:
+- Declaring an **unsigned integer** and assigning a negative value (e.g., `unsigned int x = -10;`) can lead to unexpected behavior due to the absence of a sign bit.
+
