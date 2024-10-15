@@ -1,4 +1,6 @@
-# Bitwise Operators in C++
+# Overview of Bitwise Operators, Scope, and Datatype Modifiers in C++
+
+## Bitwise Operators in C++
 
 Bitwise operators perform operations on the binary representations of numbers.
 
