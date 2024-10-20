@@ -5,10 +5,13 @@ int main()
 {
     // code
 
-    // ==== Smallest Value in Array ======
+    // ==== Smallest and Largest Value in Array ======
     int smValue = INT8_MAX;
     int numArr[] = {2, 4, 5, 7, 1,-6, -15 ,16};
     int size = sizeof(numArr) / sizeof(int);
+    int maxValue = INT8_MIN;
+    int smLoc = -1;
+    int lgLoc = -1;
 
     for (int i = 0; i < size; i++)
     {
@@ -16,25 +19,28 @@ int main()
         // {
         //     smValue = numArr[i];
         // }
-        smValue = min(smValue,numArr[i]);
+        // smValue = min(smValue,numArr[i]);
+        
+        // maxValue = max(maxValue,numArr[i]);
+
+    // Index of smallest and largest
+        if (numArr[i] > maxValue)
+        {
+            maxValue = numArr[i];
+            lgLoc = i;
+        }
+        if (numArr[i] < smValue)
+        {
+            smValue = numArr[i];
+            smLoc = i;
+        }
+
     }
-    cout << smValue << endl;
+    cout << "Smallest Value: " << smValue << endl;
+    cout << "Smallest Value Index: " << smLoc << endl;
+    cout << "Largest Value: " << maxValue << endl;
+    cout << "Largest Value Index: " << lgLoc << endl;
 
-    // ==== Greatest Value in Array ======
-    // int maxValue = INT8_MIN;
-    // int numArr[] = {2, 4, 5, 7, 1,-6, -15 ,16};
-    // int size = sizeof(numArr) / sizeof(int);
-
-    // for (int i = 0; i < size; i++)
-    // {
-    //     // if (numArr[i] > maxValue)
-    //     // {
-    //     //     maxValue = numArr[i];
-    //     // }
-
-    //     maxValue = max(maxValue,numArr[i]);
-    // }
-    // cout << maxValue << endl;
 
     return 0;
 }

@@ -43,30 +43,3 @@ int main()
     // return 0;
 
 }
-// ===Data Structure===
-// data structure are the structures in our code when we are programming which are used to store data
-
-// we are learning programming bcz we want to build real  life systems one day
-
-// every system runs one data
-
-// Data is the fuel for development/coding.programming. So  we need to learn how to handle data.
-
-// during coding when we have to store information/data we store that in the of different data structures.
-
-// ===== ALogorithms =======
-
-// algorithms are the methods to perform different effiecient operations on data.
-
-// searching,sorting etc
-
-//========= Array Syntax =============
-
-// int marks[5]
-// each block of array occupy  memory of 1 int
-// array resolve multiple variable problems
-
-// ==== Properties of array ====
-// store same type data
-// contiguos in memory(data aik sath store hota hae) => data store in continuos mannner.
-// linear (straight line structure)

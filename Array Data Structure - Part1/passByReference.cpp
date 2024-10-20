@@ -1,14 +1,32 @@
 #include <iostream>
 using namespace std;
 
-int main()
-{
-    // code
-    return 0;
+void changeArr(int arr[],int size){
+    cout << "In Function:" << endl;
+    for(int i = 0 ; i < size; i++){
+        arr[i] *= 2;
+        cout << arr[i] << " " ;
+    }
+    cout << endl;
 }
 
-// Pass By Reference
-// Reference == Address
-// Array always pass by refenrece in an fnction (implicitly)
-// Array name is a pointer (implicitly)  =>  it store starting address
-// When we change the value wich is passed by reference then the original value also change
+int main()
+{
+    // 
+    int arr[] = {1,2,3};
+    cout << "Before FUnction Call:" << endl;
+    for(int i = 0 ; i < 3; i++){
+        cout << arr[i]<< " ";
+    };
+    cout << endl;
+
+
+    // Invocation
+    changeArr(arr,3);
+    cout << "After FUnction Call:" << endl;
+    for(int i = 0 ; i < 3; i++){
+        cout << arr[i]<< " ";
+    };
+
+    return 0;
+}
